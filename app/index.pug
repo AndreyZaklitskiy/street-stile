@@ -1,51 +1,166 @@
 doctype html
 html.no-js(lang='')
-    head
-        meta(charset='utf-8')
-        meta(name='description', content='')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        title webapp
-        link(rel='apple-touch-icon', href='apple-touch-icon.png')
-        // Place favicon.ico in the root directory
-        // build:css styles/vendor.css
-        // bower:css
-        // endbower
-        // endbuild
-        // build:css styles/main.css
-        link(rel='stylesheet', href='styles/main.css')
-        // endbuild
-        // build:js scripts/vendor/modernizr.js
-        script(src='/bower_components/modernizr/modernizr.js')
-        // endbuild
-    body
+  head
+    meta(charset='utf-8')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    title webapp
+    link(rel='apple-touch-icon', href='apple-touch-icon.png')
 
-        .container
-            .header
-              
-        script.
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-                function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-                e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-                e.src='https://www.google-analytics.com/analytics.js';
-                r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        // build:js scripts/vendor.js
-        // bower:js
-        // endbower
-        // endbuild
-        // build:js scripts/plugins.js
-        script(src='/bower_components/bootstrap/js/dist/util.js')
-        script(src='/bower_components/bootstrap/js/dist/alert.js')
-        script(src='/bower_components/bootstrap/js/dist/button.js')
-        script(src='/bower_components/bootstrap/js/dist/carousel.js')
-        script(src='/bower_components/bootstrap/js/dist/collapse.js')
-        script(src='/bower_components/bootstrap/js/dist/dropdown.js')
-        script(src='/bower_components/bootstrap/js/dist/modal.js')
-        script(src='/bower_components/bootstrap/js/dist/scrollspy.js')
-        script(src='/bower_components/bootstrap/js/dist/tab.js')
-        script(src='/bower_components/bootstrap/js/dist/tooltip.js')
-        script(src='/bower_components/bootstrap/js/dist/popover.js')
-        // endbuild
-        // build:js scripts/main.js
-        script(src='scripts/main.js')
-        // endbuild
+
+    link(rel='stylesheet', href='styles/main.css')
+
+
+    script(src='/bower_components/modernizr/modernizr.js')
+    script(defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js")
+
+  body
+    header
+      .container
+        .top-bar
+          .top-bar-phone.top-bar-item
+            i(class='fas fa-globe')
+            a(href='#')
+              | language
+            i(class='fas fa-angle-down')
+          .top-bar-phone.top-bar-item
+            i(class='fas fa-mobile')
+            a(href='#')
+             | +440 875369208
+          .top-bar-mail.top-bar-item
+            i(class='fas fa-paper-plane')
+            a(href='#')
+             | info@sitename.com
+          .top-bar-register.top-bar-item
+            i(class='fas fa-sign-in-alt')
+            a(href='#')
+             | Sign In
+            span
+             | /
+            a(href='#')
+             | Register
+          .top-bar-wishlist.top-bar-item
+            i(class='fas fa-heart')
+            a(href='#')
+             | Wishlist:
+            span(class='wishlist-counter')
+             | 0 items
+            i(class='fas fa-angle-down')
+          .top-bar-sociall
+            a.top-bar-sociall-item.sociall-item-facebook
+              i(class='fab fa-facebook-f fa-xs')
+            a.top-bar-sociall-item.sociall-item-twitter
+              i(class='fab fa-twitter fa-xs')
+            a.top-bar-sociall-item.sociall-item-tumblr
+              i(class='fab fa-tumblr fa-xs')
+            a.top-bar-sociall-item.sociall-item-linkedin
+              i(class='fab fa-linkedin-in fa-xs')
+            a.top-bar-sociall-item.sociall-item-google-plus
+              i(class='fab fa-google-plus-g fa-xs')
+            a.top-bar-sociall-item.sociall-item-reed
+              i(class='fa fa-rss fa-xs')
+        .main-header
+          span.logo
+           | èxe
+          ul.main-header-menu
+            li.main-header-menu-item
+              a(href='#')
+               | Home
+            li.main-header-menu-item
+              a(href='#')
+               | About Us
+            li.main-header-menu-item
+              a(href='#')
+               | News
+            li.main-header-menu-item
+              a(href='#')
+               | FAQs
+            li.main-header-menu-item
+              a(href='#')
+               | Gallery
+            li.main-header-menu-item
+              a(href='#')
+               | Terms & Conditions
+            li.main-header-menu-item
+              a(href='#')
+               | Delivery
+            li.main-header-menu-item
+              a(href='#')
+               | Contact Us
+          .main-header-basket.buy
+            i(class='fas fa-shopping-cart')
+      .header-assortment
+        ul.header-assortment-list
+          li.header-assortment-list-item
+            a(href='#')
+             | Women
+
+          li.header-assortment-list-item
+            a(href='#')
+             | Men
+
+          li.header-assortment-list-item
+            a(href='#')
+             | Kids
+
+          li.header-assortment-list-item
+            a(href='#')
+             | Shoes
+
+          li.header-assortment-list-item
+            a(href='#')
+             | Accessories
+
+          li.header-assortment-list-item
+            a(href='#')
+             | Sale Off
+
+          li.header-assortment-list-item
+            a(href='#')
+             | Featured
+
+          li.header-assortment-list-item
+            a(href='#')
+             | Collections
+        form.header-assortment-search
+          input(type='text' placeholder='Search...' )
+          a(href='#')
+            i(class='fas fa-search')
+
+
+
+
+      script.
+        (function (b, o, i, l, e, r) {
+          b.GoogleAnalyticsObject = l;
+          b[l] || (b[l] =
+            function () {
+              (b[l].q = b[l].q || []).push(arguments)
+            });
+          b[l].l = +new Date;
+          e = o.createElement(i);
+          r = o.getElementsByTagName(i)[0];
+          e.src = 'https://www.google-analytics.com/analytics.js';
+          r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X');ga('send', 'pageview');
+      // build:js scripts/vendor.js
+      // bower:js
+      // endbower
+      // endbuild
+      // build:js scripts/plugins.js
+      script(src='/bower_components/bootstrap/js/dist/util.js')
+      script(src='/bower_components/bootstrap/js/dist/alert.js')
+      script(src='/bower_components/bootstrap/js/dist/button.js')
+      script(src='/bower_components/bootstrap/js/dist/carousel.js')
+      script(src='/bower_components/bootstrap/js/dist/collapse.js')
+      script(src='/bower_components/bootstrap/js/dist/dropdown.js')
+      script(src='/bower_components/bootstrap/js/dist/modal.js')
+      script(src='/bower_components/bootstrap/js/dist/scrollspy.js')
+      script(src='/bower_components/bootstrap/js/dist/tab.js')
+      script(src='/bower_components/bootstrap/js/dist/tooltip.js')
+      script(src='/bower_components/bootstrap/js/dist/popover.js')
+      // endbuild
+      // build:js scripts/main.js
+      script(src='scripts/main.js')
+      // endbuild

@@ -1,4 +1,5 @@
 // bower:scss
+@import "bower_components/bootstrap-grid-sass/bootstrap-grid-sass.scss";
 // endbower
 
 
@@ -30,7 +31,6 @@ html {
   height: 100vh;
   overflow-x: hidden;
 }
-
 body {
   display: flex;
   position: relative;
@@ -38,4 +38,35 @@ body {
   overflow: hidden;
   min-height: 100%;
   line-height: 1.2;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  //max-width: 1200px;
+  width: 100%;
+}
+span.logo {
+  display: inline-block;
+  font-size: 56px;
+  font-family: $axis;
+  color: #363636;
+}
+h1 {
+
+}
+h2 {
+
+}
+h3 {
+
+}
+h4 {
+
+}
+h5 {
+
+}
+p {
+  font-family: $robotoRegular;
+  font-size: 14px;
 }

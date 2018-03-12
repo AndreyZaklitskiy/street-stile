@@ -1,0 +1,146 @@
+header {
+  .container {
+
+  }
+}
+
+.top-bar {
+  color: #959595;
+  background-color: #FAFAFA;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &-item {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    a {
+      margin-left: 10px;
+      margin-right: 10px;
+      color: #959595;
+    }
+  }
+  &-register {
+    margin-left: auto;
+  }
+  &-wishlist {
+    .wishlist-counter {
+      color: #e1e1e1;
+      margin-right: 10px;
+    }
+  }
+  &-sociall {
+    //max-width: 1200px;
+    display: flex;
+
+    &-item {
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #E1E1E1;
+      margin: 3px;
+      color: #fff;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      &:hover {
+        background-color: $red;
+      }
+    }
+  }
+}
+
+.main-header {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  .logo {
+    margin-right: auto;
+  }
+  &-menu {
+    &-item {
+      display: inline-block;
+      margin-right: 33px;
+      a {
+        font-size: 14px;
+        font-family: $robotoRegular;
+        color: #707070;
+
+        &:hover {
+          color: $red;
+          &::before {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 8px;
+            background-color: $red;
+            margin-bottom: 11px;
+          }
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &-basket {
+    margin-left: 70px;
+    color: $darkGrey;
+
+  }
+}
+.header-assortment {
+  background-color: #252525;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &-list {
+    max-width: 680px;
+    display: flex;
+    &-item {
+      display: inline-block;
+      a {
+        font-size: 14px;
+        font-family: $ralewayExtraBold;
+        color: #fff;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 30px 11px;
+        height: 100%;
+        width: 100%;
+        &:hover {
+          background-color: $red;
+        }
+      }
+    }
+  }
+  &-search {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 270px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    input {
+      color: #707070;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      border-radius: 30px;
+      flex-grow: 1;
+      padding-left: 28px;
+      &:focus {
+        outline: none;
+      }
+    }
+    a {
+      color: #707070;
+    }
+  }
+}
