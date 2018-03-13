@@ -6,12 +6,14 @@ header {
 
 .top-bar {
   color: #959595;
-  background-color: #FAFAFA;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 0;
+  & > * {
+    z-index: 1;
+  }
   &-item {
     display: flex;
     align-items: center;
@@ -32,9 +34,7 @@ header {
     }
   }
   &-sociall {
-    //max-width: 1200px;
     display: flex;
-
     &-item {
       width: 20px;
       height: 20px;
@@ -51,6 +51,19 @@ header {
         background-color: $red;
       }
     }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    background-color: #FAFAFA;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
 
@@ -71,7 +84,6 @@ header {
         font-size: 14px;
         font-family: $robotoRegular;
         color: #707070;
-
         &:hover {
           color: $red;
           &::before {
@@ -92,14 +104,16 @@ header {
   &-basket {
     margin-left: 70px;
     color: $darkGrey;
-
   }
 }
 .header-assortment {
-  background-color: #252525;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  & > * {
+    z-index: 1;
+  }
   &-list {
     max-width: 680px;
     display: flex;
@@ -128,19 +142,52 @@ header {
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
+    color: #707070;
+    position: relative;
+    background-color: $darkGrey;
     input {
-      color: #707070;
+      position: absolute;
       -webkit-border-radius: 30px;
       -moz-border-radius: 30px;
       border-radius: 30px;
+      border: none;
       flex-grow: 1;
       padding-left: 28px;
+      background-color: transparent;
+      left: 0;
+      color: #707070;
       &:focus {
         outline: none;
       }
     }
-    a {
+    button {
       color: #707070;
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      height: 40px;
+      width: 50px;
+      background-color: transparent;
+      border: none;
     }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    background-color: #252525;
+    width: 100vw;
+    height: 100%;
+    z-index: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
