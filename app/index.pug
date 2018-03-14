@@ -17,6 +17,30 @@ html.no-js(lang='')
   body
     include layouts/header
 
+  .home-slider-section
+    .container
+      .home-slider
+        .home-slider-slide.fade
+          img(src='images/home-page/slider-img-1.jpg')
+          img
+        .home-slider-slide.fade
+          img(src='images/home-page/slider-img-2.jpg')
+        .home-slider-slide.fade
+          img(src='images/home-page/slider-img-3.jpg')
+        a.prev(onclick='plusSlides(-1)')
+          i(class='fal fa-angle-left ')
+        a.next(onclick='plusSlides(+1)')
+          i(class='fal fa-angle-right ')
+        .dots(style='text-align: center;')
+          span.dot(onclick='currentSlide(1)')
+          span.dot(onclick='currentSlide(2)')
+          span.dot(onclick='currentSlide(3)')
+      .news-border
+        .news-border-item
+          img(src='/images/home-page/for-woman.png')
+        .news-border-item
+          img(src='/images/home-page/for-man-png')
+
 
 
 

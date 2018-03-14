@@ -14,6 +14,7 @@
 
 @import "sections/header";
 @import "sections/head-section";
+@import "sections/home-slider-section";
 
 
 
@@ -40,8 +41,6 @@ body {
   line-height: 1.2;
 }
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
   max-width: 1200px;
 }
 span.logo {
