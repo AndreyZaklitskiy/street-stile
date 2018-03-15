@@ -101,7 +101,7 @@ header {
   }
   &-basket {
     margin-left: 70px;
-    color: $darkGrey;
+    color: $headers-color;
   }
 }
 .header-assortment {
@@ -142,7 +142,7 @@ header {
     border-radius: 30px;
     color: #707070;
     position: relative;
-    background-color: $darkGrey;
+    background-color: $headers-color;
     input {
       position: absolute;
       -webkit-border-radius: 30px;

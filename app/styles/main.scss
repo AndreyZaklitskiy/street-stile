@@ -15,6 +15,7 @@
 @import "sections/header";
 @import "sections/head-section";
 @import "sections/home-slider-section";
+@import "sections/home-featured-products-section";
 
 
 
@@ -53,10 +54,12 @@ h1 {
 
 }
 h2 {
-
+  font-size: 31px;
 }
 h3 {
-
+  font-family: $robotoBlack;
+  font-size: 16px;
+  color: $headers-color;
 }
 h4 {
 

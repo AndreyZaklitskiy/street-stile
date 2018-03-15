@@ -7,77 +7,141 @@ html.no-js(lang='')
     title webapp
     link(rel='apple-touch-icon', href='apple-touch-icon.png')
 
-
-    link(rel='stylesheet', href='styles/main.css')
-
-
-    script(src='/bower_components/modernizr/modernizr.js')
-    script(defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js")
-
-  body
-    include layouts/header
-
-  .home-slider-section
-    .container
-      .home-slider
-        .home-slider-slide.fade
-          img(src='images/home-page/slider-img-1.jpg')
-          img
-        .home-slider-slide.fade
-          img(src='images/home-page/slider-img-2.jpg')
-        .home-slider-slide.fade
-          img(src='images/home-page/slider-img-3.jpg')
-        a.prev(onclick='plusSlides(-1)')
-          i(class='fal fa-angle-left ')
-        a.next(onclick='plusSlides(+1)')
-          i(class='fal fa-angle-right ')
-        .dots(style='text-align: center;')
-          span.dot(onclick='currentSlide(1)')
-          span.dot(onclick='currentSlide(2)')
-          span.dot(onclick='currentSlide(3)')
-      .news-border
-        .news-border-item
-          img(src='/images/home-page/for-woman.png')
-        .news-border-item
-          img(src='/images/home-page/for-man-png')
+link(rel='stylesheet', href='slick/slick.css')
+link(rel='stylesheet', href='slick/slick-theme.css')
+  link(rel='stylesheet', href='styles/main.css')
 
 
 
+  script(src='/bower_components/modernizr/modernizr.js')
+  script(src='/bower_components/jquery/dist/jquery.js')
+
+  script(defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js")
+
+body
+  include layouts/header
+
+.home-slider-section
+  .container
+    .home-slider
+      .home-slider-slide.fade
+        img(src='images/home-page/slider-img-1.jpg')
+        img
+      .home-slider-slide.fade
+        img(src='images/home-page/slider-img-2.jpg')
+      .home-slider-slide.fade
+        img(src='images/home-page/slider-img-3.jpg')
+      a.prev(onclick='plusSlides(-1)')
+        i(class='fal fa-angle-left ')
+      a.next(onclick='plusSlides(+1)')
+        i(class='fal fa-angle-right ')
+      .dots(style='text-align: center;')
+        span.dot(onclick='currentSlide(1)')
+        span.dot(onclick='currentSlide(2)')
+        span.dot(onclick='currentSlide(3)')
+    .news-border
+      img.news-border-item(src='images/home-page/For-Woman.jpg')
+
+      img.news-border-item(src='images/home-page/For-Man.jpg')
+
+.home-featured-section
+  .container
+    h2
+      | Featured Products
+    p
+      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    .home-featured-slider
+      .home-featured-slider-prod
+        .prod-photo
+          img(src='images/home-page/products/prod1.jpg')
+        h3.prod-title
+          | Product Title Here
+        h3.prod-price
+          | $230.99
+      .home-featured-slider-prod
+        .prod-photo
+          img(src='images/home-page/products/prod2.jpg')
+        h3.prod-title
+          | Product Title Here
+        h3.prod-price
+          | $230.99
+      .home-featured-slider-prod
+        .prod-photo
+          img(src='images/home-page/products/prod3.jpg')
+        h3.prod-title
+          | Product Title Here
+        h3.prod-price
+          | $230.99
+      .home-featured-slider-prod
+        .prod-photo
+          img(src='images/home-page/products/prod4.jpg')
+        h3.prod-title
+          | Product Title Here
+        h3.prod-price
+          | $230.99
+      .home-featured-slider-prod
+        .prod-photo
+          img(src='images/home-page/products/prod4.jpg')
+        h3.prod-title
+          | Product Title Here
+        h3.prod-price
+          | $230.99
+      .home-featured-slider-prod
+        .prod-photo
+          img(src='images/home-page/products/prod4.jpg')
+        h3.prod-title
+          | Product Title Here
+        h3.prod-price
+          | $230.99
+      .home-featured-slider-prod
+        .prod-photo
+          img(src='images/home-page/products/prod4.jpg')
+        h3.prod-title
+          | Product Title Here
+        h3.prod-price
+          | $230.99
+      .home-featured-slider-prod
+        .prod-photo
+          img(src='images/home-page/products/prod4.jpg')
+        h3.prod-title
+          | Product Title Here
+        h3.prod-price
+          | $230.99
 
 
 
 
-      script.
-        (function (b, o, i, l, e, r) {
-          b.GoogleAnalyticsObject = l;
-          b[l] || (b[l] =
-            function () {
-              (b[l].q = b[l].q || []).push(arguments)
-            });
-          b[l].l = +new Date;
-          e = o.createElement(i);
-          r = o.getElementsByTagName(i)[0];
-          e.src = 'https://www.google-analytics.com/analytics.js';
-          r.parentNode.insertBefore(e, r)
-        }(window, document, 'script', 'ga'));
-        ga('create', 'UA-XXXXX-X');ga('send', 'pageview');
-      // build:js scripts/vendor.js
-      // bower:js
-      // endbower
-      // endbuild
-      // build:js scripts/plugins.js
-      script(src='/bower_components/bootstrap/js/dist/util.js')
-      script(src='/bower_components/bootstrap/js/dist/alert.js')
-      script(src='/bower_components/bootstrap/js/dist/button.js')
-      script(src='/bower_components/bootstrap/js/dist/carousel.js')
-      script(src='/bower_components/bootstrap/js/dist/collapse.js')
-      script(src='/bower_components/bootstrap/js/dist/dropdown.js')
-      script(src='/bower_components/bootstrap/js/dist/modal.js')
-      script(src='/bower_components/bootstrap/js/dist/scrollspy.js')
-      script(src='/bower_components/bootstrap/js/dist/tab.js')
-      script(src='/bower_components/bootstrap/js/dist/tooltip.js')
-      script(src='/bower_components/bootstrap/js/dist/popover.js')
-      // endbuild
-      // build:js scripts/main.js
-      script(src='scripts/main.js')
-      // endbuild
+
+
+    script.
+      (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+          function () {
+            (b[l].q = b[l].q || []).push(arguments)
+          });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = 'https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+      }(window, document, 'script', 'ga'));
+      ga('create', 'UA-XXXXX-X');ga('send', 'pageview');
+
+
+
+script(src='/bower_components/bootstrap/js/dist/util.js')
+script(src='/bower_components/bootstrap/js/dist/alert.js')
+script(src='/bower_components/bootstrap/js/dist/button.js')
+script(src='/bower_components/bootstrap/js/dist/carousel.js')
+script(src='/bower_components/bootstrap/js/dist/collapse.js')
+script(src='/bower_components/bootstrap/js/dist/dropdown.js')
+script(src='/bower_components/bootstrap/js/dist/modal.js')
+script(src='/bower_components/bootstrap/js/dist/scrollspy.js')
+script(src='/bower_components/bootstrap/js/dist/tab.js')
+script(src='/bower_components/bootstrap/js/dist/tooltip.js')
+script(src='/bower_components/bootstrap/js/dist/popover.js')
+// endbuild
+// build:js scripts/main.js
+script(src='scripts/main.js')
+// endbuild
