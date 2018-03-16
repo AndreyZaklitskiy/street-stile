@@ -28,16 +28,12 @@
 }
 
 .home-featured-slider {
-  display: flex;
-  justify-content: space-around;
   &-prod {
     display: flex;
     flex-direction: column;
-    width: 270px;
-    height: 350px;
+
   }
 }
-
 .prod {
   &-photo {
     width: 270px;
@@ -48,6 +44,7 @@
       width: 100%;
       height: 100%;
     }
+
   }
   &-title {
     font-size: 16px;
@@ -60,8 +57,95 @@
     font-size: 18px;
     text-align: center;
     color: $headers-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.sale {
+  height: 20px;
+  width: 60px;
+  position: absolute;
+  background-color: $orange;
+  left: 0;
+  top: 10%;
+  -webkit-border-radius: 3px 0 0 0;
+  -moz-border-radius: 3px 0 0 0;
+  border-radius: 3px 0 0 0;
+  span {
+    font-family: $robotoBlackItalic;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-left: 15px;
+    color: #fff;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 20px solid $orange;
+    border-right: 10px solid transparent;
+    top: 5px;
+  }
+  &:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 5px solid #fff;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    right: 0;
+  }
+}
+.new {
+  height: 20px;
+  width: 60px;
+  position: absolute;
+  background-color: $blue;
+  left: 0;
+  top: 10%;
+  -webkit-border-radius: 3px 0 0 0;
+  -moz-border-radius: 3px 0 0 0;
+  border-radius: 3px 0 0 0;
+  span {
+    font-family: $robotoBlackItalic;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-left: 15px;
+    color: #fff;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 20px solid $blue;
+    border-right: 10px solid transparent;
+    top: 5px;
+  }
+  &:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 5px solid #fff;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    right: 0;
   }
 }
 
-
-
+.old-price {
+  font-family: $robotoBold;
+  font-size: 14px;
+  color: $whiteGrey;
+  text-decoration: line-through;
+  padding-right: 10px;
+}
+.new-price {
+  font-family: $robotoBlack;
+  font-size: 18px;
+  color: $red;
+}

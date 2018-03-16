@@ -67,6 +67,19 @@
   url('../fonts/Roboto-Black.woff') format('woff'),
   url('../fonts/Roboto-Black.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Roboto-BlackItalic';
+  src: url('../fonts/Roboto-BlackItalic.woff2') format('woff2'),
+  url('../fonts/Roboto-BlackItalic.woff') format('woff'),
+  url('../fonts/Roboto-BlackItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+  url('../fonts/Roboto-Bold.woff') format('woff'),
+  url('../fonts/Roboto-Bold.ttf') format('truetype');
+}
 
 @font-face {
   font-family: 'Roboto-Regular';
