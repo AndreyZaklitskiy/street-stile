@@ -1,0 +1,76 @@
+.news-mail-section {
+  .container {
+    position: relative;
+    background-image: url(/images/home-page/news-mail-bg.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+    padding: 50px auto 80px;
+  }
+}
+h2.news-mail-header {
+  font-family: $ralewayRegular;
+  text-transform: uppercase;
+  color: $headers-color;
+  text-align: center;
+  span {
+    color: $red;
+  }
+  &:after {
+    content: '';
+    display: block;
+    width: 170px;
+    height: 1px;
+    background-color: #EBEBEB;
+    margin: 20px auto 30px;
+  }
+}
+form.news-mail-form {
+  position: relative;
+  max-width: 570px;
+  height: 50px;
+  border: 1px solid $whiteGrey;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto 30px;
+  input {
+    padding-left: 30px;
+    border: none;
+    font-family: $robotoRegular;
+    font-size: 14px;
+    color: #b7b7b7;
+    position: absolute;
+    left: 0;
+    flex-grow: 1;
+    width: 350px;
+    &:focus {
+      outline: none;
+    }
+  }
+  button {
+    width: 170px;
+    height: 50px;
+    border: none;
+    background-color: $red;
+    color: #fff;
+    font-family: $ralewayExtraBold;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: absolute;
+    right: 0;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 10px 0;
+  }
+}
+p.bla {
+  font-family: $robotoRegular;
+  font-size: 14px;
+  color: #d7d7d7;
+  text-align: center;
+}

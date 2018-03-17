@@ -1,6 +1,6 @@
 //home-page-main-slider
 $(document).ready(function() {
-  $('.home-slider').slick({
+  $('.style-slider').slick({
     dots: false,
     arrows: true
   });
@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 //slider
 $(document).ready(function(){
-  $('.home-featured-slider').slick({
+  $('.featured-slider').slick({
     dots: false,
     arrows: true,
     infinite: false,

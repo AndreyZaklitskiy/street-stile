@@ -22,122 +22,393 @@ html.no-js(lang='')
 
   body
     include layouts/header
-
-    .home-slider-section
+    .style-section
       .container
-        .home-slider
-          .home-slider-slide.fade
+        .style-slider
+          .slider-slide.fade
             img(src='images/home-page/slider-img-1.jpg')
-          .home-slider-slide.fade
+          .slider-slide.fade
             img(src='images/home-page/slider-img-2.jpg')
-          .home-slider-slide.fade
+          .slider-slide.fade
             img(src='images/home-page/slider-img-3.jpg')
-          //a.prev(onclick='plusSlides(-1)')
-          //  i(class='fal fa-angle-left ')
-          //a.next(onclick='plusSlides(+1)')
-          //  i(class='fal fa-angle-right ')
-          //.dots(style='text-align: center;')
-          //  span.dot(onclick='currentSlide(1)')
-          //  span.dot(onclick='currentSlide(2)')
-          //  span.dot(onclick='currentSlide(3)')
         .news-border
           img.news-border-item(src='images/home-page/For-Woman.jpg')
-
           img.news-border-item(src='images/home-page/For-Man.jpg')
-
-    .home-featured-section
+    .featured-section
       .container
         h2
           | Featured Products
         p
           | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-        .home-featured-slider
-          .home-featured-slider-prod
+        .featured-slider
+          .featured-slider-prod.prod
             .prod-photo
-              img(src='images/home-page/products/prod1.jpg')
-            h3.prod-title
+              .shade
+                a(href='#' class='like')
+                  i(class="fas fa-heart like-icon")
+                a(href='#' class='to-cart')
+                  i(class="fas fa-shopping-cart to-cart-icon")
+                .stars
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star")
+              img(src='images/home-page/stuff/prod1.jpg')
+            a.prod-title(href='#')
               | Product Title Here
             .prod-price
               h3
                 | $230.99
-          .home-featured-slider-prod
+          .featured-slider-prod.prod
             .prod-photo
+              .shade
+                a(href='#' class='like')
+                  i(class="fas fa-heart like-icon")
+                a(href='#' class='to-cart')
+                  i(class="fas fa-shopping-cart to-cart-icon")
+                .stars
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star")
               .sale
                 span
-                 | Sale
-              img(src='images/home-page/products/prod2.jpg')
-            h3.prod-title
+                  | Sale
+              img(src='images/home-page/stuff/prod2.jpg')
+            a.prod-title(href='#')
               | Product Title Here
             .prod-price
               h3.old-price
                 | $96.00
               h3.new-price
                 | $58.00
-          .home-featured-slider-prod
+          .featured-slider-prod.prod
             .prod-photo
-              img(src='images/home-page/products/prod3.jpg')
-            h3.prod-title
+              .shade
+                a(href='#' class='like')
+                  i(class="fas fa-heart like-icon")
+                a(href='#' class='to-cart')
+                  i(class="fas fa-shopping-cart to-cart-icon")
+                .stars
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star")
+                  i(class="fas fa-star")
+              img(src='images/home-page/stuff/prod3.jpg')
+            a.prod-title(href='#')
               | Product Title Here
             .prod-price
               h3
                 | $75.00
-          .home-featured-slider-prod
+          .featured-slider-prod.prod
             .prod-photo
+              .shade
+                a(href='#' class='like')
+                  i(class="fas fa-heart like-icon")
+                a(href='#' class='to-cart')
+                  i(class="fas fa-shopping-cart to-cart-icon")
+                .stars
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star")
+                  i(class="fas fa-star")
+                  i(class="fas fa-star")
               .new
                 span
-                 | new
-              img(src='images/home-page/products/prod4.jpg')
-            h3.prod-title
+                  | new
+              img(src='images/home-page/stuff/prod4.jpg')
+            a.prod-title(href='#')
               | Product Title Here
             .prod-price
               h3
                 | $99.00
-          .home-featured-slider-prod
+          .featured-slider-prod.prod
             .prod-photo
-              img(src='images/home-page/products/prod1.jpg')
-            h3.prod-title
+              .shade
+                a(href='#' class='like')
+                  i(class="fas fa-heart like-icon")
+                a(href='#' class='to-cart')
+                  i(class="fas fa-shopping-cart to-cart-icon")
+                .stars
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+              img(src='images/home-page/stuff/prod1.jpg')
+            a.prod-title(href='#')
               | Product Title Here
             .prod-price
               h3
                 | $230.99
-          .home-featured-slider-prod
+          .featured-slider-prod.prod
             .prod-photo
+              .shade
+                a(href='#' class='like')
+                  i(class="fas fa-heart like-icon")
+                a(href='#' class='to-cart')
+                  i(class="fas fa-shopping-cart to-cart-icon")
+                .stars
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star ")
               .sale
                 span
-                 | sale
-              img(src='images/home-page/products/prod2.jpg')
-            h3.prod-title
+                  | sale
+              img(src='images/home-page/stuff/prod2.jpg')
+            a.prod-title(href='#')
               | Product Title Here
             .prod-price
               h3.old-price
                 | $96.00
               h3.new-price
                 | $58.00
-          .home-featured-slider-prod
+          .featured-slider-prod.prod
             .prod-photo
-              img(src='images/home-page/products/prod3.jpg')
-            h3.prod-title
+              .shade
+                a(href='#' class='like')
+                  i(class="fas fa-heart like-icon")
+                a(href='#' class='to-cart')
+                  i(class="fas fa-shopping-cart to-cart-icon")
+                .stars
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star")
+              img(src='images/home-page/stuff/prod3.jpg')
+            a.prod-title(href='#')
               | Product Title Here
             .prod-price
               h3
                 | $75.99
-          .home-featured-slider-prod
+          .featured-slider-prod.prod
             .prod-photo
+              .shade
+                a(href='#' class='like')
+                  i(class="fas fa-heart like-icon")
+                a(href='#' class='to-cart')
+                  i(class="fas fa-shopping-cart to-cart-icon")
+                .stars
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star")
               .new
                 span
-                 | new
-              img(src='images/home-page/products/prod4.jpg')
-            h3.prod-title
+                  | new
+              img(src='images/home-page/stuff/prod4.jpg')
+            a.prod-title(href='#')
               | Product Title Here
             .prod-price
               h3
                 | $99.00
 
-
-    .home-shipping-section
+    .shipping-section
       .container
         h1
-         | Free Shipping On All
+          | Free Shipping On All
+        span.orders
+          | Orders Over $60
+    .recommend-section
+      .container
+        h2
+          | We Recommend You
+        p
+          | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        .recommended-stuff-block
+          .recommended-stuff-item.prod
+            .prod-photo
+              .hot
+                span
+                 | hot
+              .shade
+                a(href='#' class='like')
+                  i(class="fas fa-heart like-icon")
+                a(href='#' class='to-cart')
+                  i(class="fas fa-shopping-cart to-cart-icon")
+                .stars
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star")
+                  i(class="fas fa-star")
+              img(src='images/home-page/stuff/prod3.jpg')
+            a.prod-title(href='#')
+              | Product Title Here
+            .prod-price
+              h3
+                | $75.00
+
+          .recommended-stuff-item.prod
+            .prod-photo
+              .new
+                span
+                 | new
+              .shade
+                a(href='#' class='like')
+                  i(class="fas fa-heart like-icon")
+                a(href='#' class='to-cart')
+                  i(class="fas fa-shopping-cart to-cart-icon")
+                .stars
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star")
+                  i(class="fas fa-star")
+              img(src='images/home-page/stuff/prod3.jpg')
+            a.prod-title(href='#')
+              | Product Title Here
+            .prod-price
+              h3
+                | $75.00
+          .recommended-stuff-item.prod
+            .prod-photo
+              .sale
+                span
+                 | sale
+              .shade
+                a(href='#' class='like')
+                  i(class="fas fa-heart like-icon")
+                a(href='#' class='to-cart')
+                  i(class="fas fa-shopping-cart to-cart-icon")
+                .stars
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star")
+                  i(class="fas fa-star")
+              img(src='images/home-page/stuff/prod3.jpg')
+            a.prod-title(href='#')
+              | Product Title Here
+            .prod-price
+              h3
+                | $75.00
+
+          .recommended-stuff-item.prod
+            .prod-photo
+              .shade
+                a(href='#' class='like')
+                  i(class="fas fa-heart like-icon")
+                a(href='#' class='to-cart')
+                  i(class="fas fa-shopping-cart to-cart-icon")
+                .stars
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star")
+                  i(class="fas fa-star")
+              img(src='images/home-page/stuff/prod3.jpg')
+            a.prod-title(href='#')
+              | Product Title Here
+            .prod-price
+              h3
+                | $75.00
+
+          .recommended-stuff-item.prod
+            .prod-photo
+              .hot
+                span
+                 | hot
+              .shade
+                a(href='#' class='like')
+                  i(class="fas fa-heart like-icon")
+                a(href='#' class='to-cart')
+                  i(class="fas fa-shopping-cart to-cart-icon")
+                .stars
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star")
+                  i(class="fas fa-star")
+              img(src='images/home-page/stuff/prod3.jpg')
+            a.prod-title(href='#')
+              | Product Title Here
+            .prod-price
+              h3
+                | $75.00
+
+          .recommended-stuff-item.prod
+            .prod-photo
+              .shade
+                a(href='#' class='like')
+                  i(class="fas fa-heart like-icon")
+                a(href='#' class='to-cart')
+                  i(class="fas fa-shopping-cart to-cart-icon")
+                .stars
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star")
+                  i(class="fas fa-star")
+              img(src='images/home-page/stuff/prod3.jpg')
+            a.prod-title(href='#')
+              | Product Title Here
+            .prod-price
+              h3
+                | $75.00
+
+          .recommended-stuff-item.prod
+            .prod-photo
+              .shade
+                a(href='#' class='like')
+                  i(class="fas fa-heart like-icon")
+                a(href='#' class='to-cart')
+                  i(class="fas fa-shopping-cart to-cart-icon")
+                .stars
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star")
+                  i(class="fas fa-star")
+              img(src='images/home-page/stuff/prod3.jpg')
+            a.prod-title(href='#')
+              | Product Title Here
+            .prod-price
+              h3
+                | $75.00
+
+          .recommended-stuff-item.prod
+            .prod-photo
+              .shade
+                a(href='#' class='like')
+                  i(class="fas fa-heart like-icon")
+                a(href='#' class='to-cart')
+                  i(class="fas fa-shopping-cart to-cart-icon")
+                .stars
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star active-star")
+                  i(class="fas fa-star")
+                  i(class="fas fa-star")
+              img(src='images/home-page/stuff/prod3.jpg')
+            a.prod-title(href='#')
+              | Product Title Here
+            .prod-price
+              h3
+                | $75.00
+
+
+          a.load(href='#')
+           | Load More Products
+    .news-mail-section
+      .container
+        h2.news-mail-header Sign Up For Our <br> Monthly
+          span Newsletter
+        form(action="" class="news-mail-form")
+          input(type="email" placeholder="Your Email Address")
+          button(type="submit" class="news-mail-btn")
+           | Subscribe Now
+        p.bla
+         | * Lorem ipsum dolor consectetuer adipiscing elit.
+
+
 
 
 
