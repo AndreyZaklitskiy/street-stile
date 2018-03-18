@@ -1,0 +1,123 @@
+.footer-section {
+  .container {
+    color: #464646;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    & > * {
+      z-index: 1;
+    }
+    &:before {
+      content: '';
+      width: 100vw;
+      height: 100%;
+      background-color: #252525;
+      position: absolute;
+      display: block;
+      z-index: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+}
+.exe-lorem {
+  max-width: 280px;
+  &-logo-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    span.logo {
+      color: #464646;
+      padding-right: 25px;
+    }
+    span.txt {
+      font-family: $robotoBlack;
+      font-size: 10px;
+      text-transform: uppercase;
+      padding-top: 15px;
+    }
+  }
+  &-about {
+    margin-bottom: 40px;
+  }
+}
+span.footer-header {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-family: $robotoMedium;
+  color: #fff;
+  display: inline-block;
+  &:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 70px;
+    background-color: $red;
+    margin-top: 26px;
+  }
+}
+.footer-list {
+  width: 270px;
+  &-item {
+    border-bottom: 1px solid $headers-color;
+    a {
+      color: #959595;
+      display: flex;
+      align-items: center;
+      max-width: 240px;
+      p {
+        margin-left: 14px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      &:hover {
+        color: $red;
+      }
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  &-item.post {
+    margin-top: 10px;
+    a {
+      align-items: stretch;
+      flex-direction: column;
+      p.post-head {
+        margin-left: 0;
+      }
+      span.post-date {
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+    }
+    &:hover {
+      span.post-date {
+        color: #fff;
+      }
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+.footer-contact-block {
+  max-width: 270px;
+  p {
+    padding-bottom: 10px;
+  }
+}
+.top-bar-sociall-item.footer-bar {
+  background-color: $headers-color;
+  color: #252525;
+  &:hover {
+    background-color: $red;
+  }
+}
