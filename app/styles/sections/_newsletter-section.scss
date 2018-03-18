@@ -1,0 +1,59 @@
+.newsletter-section {
+  .container {
+    position: relative;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    & > * {
+      z-index: 1;
+    }
+    &:before {
+      content: '';
+      width: 100vw;
+      height: 100%;
+      position: absolute;
+      background-color: $red;
+      z-index: 0;
+      display: inline-block;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
+}
+p.newsletter-header {
+  color: #fff;
+  font-family: $ralewayExtraBold;
+  font-size: 18px;
+  text-transform: uppercase;
+  max-width: 215px;
+  display: block;
+  text-align: right;
+}
+form.newsletter-form {
+  @extend .form-styles;
+  background-color: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+
+  i.fa-envelope {
+    color: #b7b7b7;
+    margin: auto 20px;
+    position: absolute;
+  }
+  input {
+    @extend .input-styles;
+    padding-left: 20px;
+    border-left: 1px solid #b7b7b7;
+  }
+  button {
+    @extend .btn-styles;
+    background-color: $headers-color;
+  }
+}

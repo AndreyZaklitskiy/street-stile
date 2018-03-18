@@ -1,0 +1,56 @@
+.brand-section{
+  .container {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 75px;
+    display: flex;
+    justify-content: center;
+  }
+}
+.brand-slider {
+  position: relative;
+  max-width: 1200px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.brand-slider-item.slick-slide {
+  width: 250px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slick-initialized .slick-slide .brand-slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+}
+.slick-prev, .slick-next {
+  background-color: #F3F3F3;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  &:hover {
+    background-color: $red;
+  }
+}
+.slick-prev {
+  left: 0;
+  &:before {
+    content: '';
+    @include sprite($arrow-left);
+    display: inline-block;
+  }
+}
+.slick-next {
+  right: 0;
+  &:before {
+    content: '';
+    @include sprite($arrow-right);
+    display: inline-block;
+  }
+}
+
