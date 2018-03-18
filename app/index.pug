@@ -32,8 +32,10 @@ html.no-js(lang='')
           .slider-slide.fade
             img(src='images/home-page/slider-img-3.jpg')
         .news-border
-          img.news-border-item(src='images/home-page/For-Woman.jpg')
-          img.news-border-item(src='images/home-page/For-Man.jpg')
+          .news-border-item
+          img(src='images/home-page/For-Woman.jpg')
+          .news-border-item
+          img(src='images/home-page/For-Man.jpg')
     .featured-section
       .container
         h2
@@ -407,174 +409,9 @@ html.no-js(lang='')
             | Subscribe Now
         p.bla
           | * Lorem ipsum dolor consectetuer adipiscing elit.
-    .brand-section
-      .container
-        .brand-slider
-          .brand-slider-item
-            img(src='images/sponsors/football-club.png')
-          .brand-slider-item
-            img(src='images/sponsors/explore.png')
-          .brand-slider-item
-            img(src='images/sponsors/wild-west-academy.png')
-          .brand-slider-item
-            img(src='images/sponsors/jefferson.png')
-          .brand-slider-item
-            img(src='images/sponsors/the-american-eagle.png')
-          .brand-slider-item
-            img(src='images/sponsors/football-club.png')
-          .brand-slider-item
-            img(src='images/sponsors/the-american-eagle.png')
-          .brand-slider-item
-            img(src='images/sponsors/wild-west-academy.png')
-
-
-    .newsletter-section
-      .container
-        p.newsletter-header
-          | Sign Up For Our <br> Monthly Newsletter
-        form(action="" class="newsletter-form")
-          i(class="fas fa-envelope")
-          input(type="email" placeholder="Email Address")
-          button(type="submit" class="newsletter-btn")
-            | Subscribe
-
-    .footer-section
-      .container
-        .exe-lorem
-          .exe-lorem-logo-block
-            span.logo
-              | èxe
-            span.txt
-              | Clean and Adaptive <br> Front-End
-          p.exe-lorem-about
-            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl commodo consequat.
-          .top-bar-sociall
-            a.top-bar-sociall-item.footer-bar.sociall-item-facebook
-              i(class='fab fa-facebook-f fa-xs')
-            a.top-bar-sociall-item.footer-bar.sociall-item-twitter
-              i(class='fab fa-twitter fa-xs')
-            a.top-bar-sociall-item.footer-bar.sociall-item-tumblr
-              i(class='fab fa-tumblr fa-xs')
-            a.top-bar-sociall-item.footer-bar.sociall-item-linkedin
-              i(class='fab fa-linkedin-in fa-xs')
-            a.top-bar-sociall-item.footer-bar.sociall-item-google-plus
-              i(class='fab fa-google-plus-g fa-xs')
-            a.top-bar-sociall-item.footer-bar.sociall-item-vk
-              i(class='fab fa-vk fa-xs')
-            a.top-bar-sociall-item.footer-bar.sociall-item-pinterest
-              i(class='fab fa-pinterest-p fa-xs')
-            a.top-bar-sociall-item.footer-bar.sociall-item-instagram
-              i(class='fab fa-instagram fa-xs')
-            a.top-bar-sociall-item.footer-bar.sociall-item-reed
-              i(class='fa fa-rss fa-xs')
-        .footer-inf-block
-          span.footer-header
-            | Informations
-          ul.footer-list
-            li.footer-list-item
-              a(href='#')
-                i(class='fas fa-caret-right')
-                p
-                  | About Us
-            li.footer-list-item
-              a(href='#')
-                i(class='fas fa-caret-right')
-                p
-                  | Delivery Information
-            li.footer-list-item
-              a(href='#')
-                i(class='fas fa-caret-right')
-                p
-                  | Terms and Conditions
-            li.footer-list-item
-              a(href='#')
-                i(class='fas fa-caret-right')
-                p
-                  | Privacy Policy
-            li.footer-list-item
-              a(href='#')
-                i(class='fas fa-caret-right')
-                p
-                  | Contact Us
-            li.footer-list-item
-              a(href='#')
-                i(class='fas fa-caret-right')
-                p
-                  | Return Policy
-
-        .footer-post-block
-          span.footer-header
-            | Recent Posts
-          ul.footer-list
-            li.footer-list-item.post
-              a(href='#')
-                p.post-head
-                  | Corem ipsum dolor sit amet
-                span.post-date
-                  | 04 February 2017
-
-            li.footer-list-item.post
-              a(href='#')
-                p.post-head
-                  | Mirum est notare quam littera gothica, quam nunc putamus parum
-                span.post-date
-                  | 28 January 2017
-
-            li.footer-list-item.post
-              a(href='#')
-                p.post-head
-                  | Duis autem vel eum iriure
-                span.post-date
-                  | 03 January 2017
-        .footer-contact-block
-          span.footer-header
-            | Get In Touch
-          p
-            | Lorem ipsum dolor sit amet, consectetuer adipiscing diam nonummy.
-          ul.footer-list
-            li.footer-list-item
-              a(href='#')
-                i(class='fas fa-map-marker-alt')
-                p
-                  | 795 South Park Avenue, Door 6 Wonderland, CA 94107, Australia
-            li.footer-list-item
-              a(href='#')
-                i(class='fas fa-mobile')
-                p
-                  | +440 875369208
-            li.footer-list-item
-              a(href='#')
-                i(class='fas fa-paper-plane')
-                p
-                  | support@sitename.com
-
-
-
-
-    footer
-      .container
-        .license
-          p
-            | © 2018 èxe, Made by
-            span
-              |  KlitsMan
-          p
-           | /
-          p
-            |  Without
-            span
-              |  Bootstrap
-        .pay
-          a.pay-sistem(href='#')
-            i(class='fab fa-cc-paypal')
-          a.pay-sistem(href='#')
-            i(class='fab fa-cc-visa')
-          a.pay-sistem(href='#')
-            i(class='fab fa-cc-mastercard')
-          a.pay-sistem(href='#')
-            i(class='fab fa-bitcoin')
-          a.pay-sistem(href='#')
-            i(class='fab fa-cc-apple-pay')
+    include layouts/brand
+    include layouts/newsletter
+    include layouts/footer
 
 
 

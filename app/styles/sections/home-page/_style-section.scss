@@ -1,8 +1,8 @@
 .style-section {
-  .container {
+   .container {
 
-  }
-}
+   }
+ }
 .style-slider {
   position: relative;
   max-height: 425px;
@@ -14,16 +14,13 @@
     }
   }
 }
-
-
-
-
 .news-border {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
   &-item {
     height: 220px;
-    width: 570px;
+    max-width: 570px;
+    border: 1px solid $red;
+    background-color: green;
   }
 }
