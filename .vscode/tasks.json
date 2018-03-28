@@ -1,0 +1,28 @@
+{
+	"version": "2.0.0",
+	"command": "gulp",
+	"isShellCommand":true,
+	"args": [
+		"--no-color"
+	],
+	"tasks": [
+		{
+			"type": "gulp",
+			"task": "serve",
+			"isBuildCommand": true,
+			"showOutput": "always",
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"type": "gulp",
+			"task": "sprite"
+		}
+	],
+	"problemMatchers": [
+		"$gulp-tsc"
+	]
+}

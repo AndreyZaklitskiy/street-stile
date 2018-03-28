@@ -10,7 +10,7 @@
   overflow: hidden;
   &-slide {
     img {
-      width: 100%;
+
     }
   }
 }
@@ -18,9 +18,13 @@
   display: flex;
   justify-content: space-around;
   &-item {
-    height: 220px;
+    max-height: 220px;
     max-width: 570px;
-    border: 1px solid $red;
-    background-color: green;
+    min-width: 300px;
+
+    img {
+      height: auto;
+      width: 100%;
+    }
   }
 }

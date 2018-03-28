@@ -1,7 +1,7 @@
 header
   .container
     .top-bar
-      .top-bar-phone.top-bar-item
+      .top-bar-language.top-bar-item
         i(class='fas fa-globe')
         a(href='#')
           | language
@@ -30,6 +30,23 @@ header
           | 0 items
         i(class='fas fa-angle-down')
       .top-bar-sociall
+            a.top-bar-sociall-item.sociall-item-facebook
+              i(class='fab fa-facebook-f fa-xs')
+            a.top-bar-sociall-item.sociall-item-twitter
+              i(class='fab fa-twitter fa-xs')
+            a.top-bar-sociall-item.sociall-item-tumblr
+              i(class='fab fa-tumblr fa-xs')
+            a.top-bar-sociall-item.sociall-item-linkedin
+              i(class='fab fa-linkedin-in fa-xs')
+            a.top-bar-sociall-item.sociall-item-google-plus
+              i(class='fab fa-google-plus-g fa-xs')
+            a.top-bar-sociall-item.sociall-item-reed
+              i(class='fa fa-rss fa-xs')
+    .main-header
+      button.hamburger.hamburger--slider(type="button")
+        span.hamburger-box
+          span.hamburger-inner
+      .top-bar-sociall
         a.top-bar-sociall-item.sociall-item-facebook
           i(class='fab fa-facebook-f fa-xs')
         a.top-bar-sociall-item.sociall-item-twitter
@@ -42,7 +59,7 @@ header
           i(class='fab fa-google-plus-g fa-xs')
         a.top-bar-sociall-item.sociall-item-reed
           i(class='fa fa-rss fa-xs')
-    .main-header
+
       span.logo
         | èxe
       ul.main-header-menu
@@ -72,8 +89,8 @@ header
             | Contact Us
       a.main-header-basket.buy(href='#')
         i(class='fas fa-shopping-cart')
-        span
-          | 2
+        span.number-of-buys
+          | 10
     .header-assortment
       ul.header-assortment-list
         li.header-assortment-list-item

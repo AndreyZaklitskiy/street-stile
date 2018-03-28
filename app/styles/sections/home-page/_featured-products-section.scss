@@ -1,6 +1,6 @@
 .featured-section {
   .container {
-    padding: 80px 0;
+    padding: 80px 0 120px;
     h2 {
       text-transform: uppercase;
       text-align: center;
@@ -27,4 +27,38 @@
   }
 }
 
+.featured-slider {
+  position: relative;
+
+  .slick-prev {
+    border: 1px solid $red;
+    background-color: green;
+    color: #000;
+    left: 48%;
+    z-index: 5;
+    top: 112%;
+    i.far {
+      color: $red;
+    }
+    &:hover {
+      content: '';
+
+    }
+  }
+  .slick-next {
+    border: 1px solid $red;
+    background-color: green;
+    color: #000;
+    z-index: 2;
+    right: 48%;
+    top: 112%;
+    i.far {
+      color: $red;
+    }
+    &:hover {
+      content: '';
+
+    }
+  }
+}
 
