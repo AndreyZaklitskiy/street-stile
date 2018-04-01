@@ -62,6 +62,11 @@ h1 {
 }
 h2 {
   font-size: 31px;
+  font-family: $robotoRegular;
+  padding-bottom: 20px;
+  color: $headers-color;
+  text-transform: uppercase;
+  text-align: center;
 }
 h3 {
   font-family: $robotoBlack;
@@ -79,9 +84,28 @@ p {
   font-family: $robotoRegular;
   font-size: 14px;
 }
+p.subtext {
+  text-align: center;
+  color: $greytxt;
+  max-width: 545px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 170px;
+    height: 1px;
+    margin: 33px auto 40px;
+    background-color: #EBEBEB;
+  }
+}
 .prod {
   display: flex;
   flex-direction: column;
+  margin: auto;
+  margin-bottom: 30px;
   &-photo {
     display: inline-block;
     width: 270px;
@@ -101,7 +125,6 @@ p {
     text-align: center;
     margin-bottom: 13px;
     color: $headers-color;
-
     &:hover {
       color: $red;
     }
@@ -314,7 +337,7 @@ a.to-cart {
     outline: none;
   }
 }
-.btn-styles {
+.btn-form-styles {
   width: 170px;
   height: 50px;
   border: none;
@@ -327,4 +350,23 @@ a.to-cart {
   -webkit-border-radius: 0 10px 10px 0;
   -moz-border-radius: 0 10px 10px 0;
   border-radius: 0 10px 10px 0;
+}
+
+
+@media (max-width: 575px) {
+
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 25px;
+  }
+  p.subtext {
+    font-size: 11px;
+  }
+
+  .btn-form-styles {
+    width: 100px;
+    font-size: 10px;
+  }
 }

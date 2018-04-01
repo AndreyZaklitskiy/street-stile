@@ -1,29 +1,6 @@
 .featured-section {
   .container {
     padding: 80px 0 120px;
-    h2 {
-      text-transform: uppercase;
-      text-align: center;
-      font-family: $robotoRegular;
-      padding-bottom: 20px;
-      color: $headers-color;
-    }
-    p {
-      text-align: center;
-      color: $greytxt;
-      max-width: 545px;
-      margin-left: auto;
-      margin-right: auto;
-      &:after {
-        content: '';
-        display: inline-block;
-        width: 170px;
-        height: 1px;
-        margin-top: 33px;
-        margin-bottom: 40px;
-        background-color: #EBEBEB;
-      }
-    }
   }
 }
 

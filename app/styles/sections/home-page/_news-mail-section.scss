@@ -27,7 +27,7 @@ h2.news-mail-header {
     margin: 20px auto 30px;
   }
 }
-form.news-mail-form {
+.news-mail-form {
   @extend .form-styles;
   border: 1px solid $whiteGrey;
   -webkit-border-radius: 10px;
@@ -39,7 +39,7 @@ form.news-mail-form {
     padding-left: 30px;
   }
   button {
-   @extend .btn-styles;
+   @extend .btn-form-styles;
     background-color: $red;
   }
 }
@@ -48,4 +48,14 @@ p.bla {
   font-size: 14px;
   color: #d7d7d7;
   text-align: center;
+}
+
+
+
+@media (max-width: 480px) {
+  .news-mail-form {
+    button {
+      width: 100px;
+    }
+  }
 }
