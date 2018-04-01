@@ -16,11 +16,11 @@ header
           | info@sitename.com
       .top-bar-register.top-bar-item
         i(class='fas fa-sign-in-alt')
-        a(href='#')
+        a.sign-in(href='#')
           | Sign In
         span
           | /
-        a(href='#')
+        a.register(href='#')
           | Register
       .top-bar-wishlist.top-bar-item
         i(class='fas fa-heart')
@@ -43,9 +43,11 @@ header
             a.top-bar-sociall-item.sociall-item-reed
               i(class='fa fa-rss fa-xs')
     .main-header
-      button.hamburger.hamburger--slider(type="button")
+      button.hamburger.hamburger--collapse.humburger-main(type="button")
         span.hamburger-box
           span.hamburger-inner
+      span.logo
+        | èxe
       .top-bar-sociall
         a.top-bar-sociall-item.sociall-item-facebook
           i(class='fab fa-facebook-f fa-xs')
@@ -59,9 +61,6 @@ header
           i(class='fab fa-google-plus-g fa-xs')
         a.top-bar-sociall-item.sociall-item-reed
           i(class='fa fa-rss fa-xs')
-
-      span.logo
-        | èxe
       ul.main-header-menu
         li.main-header-menu-item
           a(href='#')
@@ -121,3 +120,6 @@ header
         input(type='text' placeholder='Search...')
         button(type='submit')
           i(class='fas fa-search')
+      button.hamburger.hamburger--collapse.humburger-black(type="button")
+        span.hamburger-box
+          span.hamburger-inner

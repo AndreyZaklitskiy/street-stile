@@ -76,6 +76,7 @@
   }
   &:hover {
     color: $red;
+
   }
 }
 .main-header {
@@ -177,6 +178,9 @@ span.number-of-buys {
     color: #707070;
     position: relative;
     background-color: $headers-color;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
     input {
       position: absolute;
       -webkit-border-radius: 30px;
@@ -224,24 +228,8 @@ span.number-of-buys {
   }
 }
 
-@media (max-width: 1200px) {
-  .top-bar {
-    &-item {
-      display: flex;
-      align-items: center;
-      margin-right: 20px;
-
-      a {
-        margin-left: 5px;
-        margin-right: 5px;
-        color: #959595;
-
-      }
-    }
-  }
-}
-
 .hamburger {
+  display: none;
   .hamburger-inner {
     background-color: $red;
     &:before {
@@ -252,13 +240,29 @@ span.number-of-buys {
     }
   }
 }
+.humburger-main {
+  margin-left: auto;
+}
+.humburger-black {
+  margin-left: auto;
+  margin-right: auto;
+}
 
+@media (max-width: 1200px) {
+  .top-bar {
+    &-item {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+      a {
+        margin-left: 5px;
+        margin-right: 5px;
+        color: #959595;
 
-
-
-
-
-
+      }
+    }
+  }
+}
 
 @media (max-width: 991px) {
   .top-bar {
@@ -299,6 +303,9 @@ span.number-of-buys {
 }
 
 @media (max-width: 768px) {
+  .hamburger {
+    display: inline-block;
+  }
   .top-bar {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -324,5 +331,42 @@ span.number-of-buys {
   }
   ul.header-assortment-list {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-bar {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    &-language {
+      order: 3;
+      margin-right: 5px;
+      .fa-angle-down {
+        display: none;
+      }
+    }
+    &-wishlist {
+      order: 2;
+      margin-left: auto;
+      margin-right: auto;
+      .fa-angle-down {
+        display: none;
+      }
+      }
+    &-register {
+      order: 1;
+      margin-left: 5px;
+      a {
+        display: none;
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+  .main-header {
+    .top-bar-sociall {
+      display: none;
+    }
   }
 }
