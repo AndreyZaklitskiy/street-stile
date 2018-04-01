@@ -2,7 +2,6 @@
   .container {
     color: #464646;
     padding-top: 80px;
-    padding-bottom: 80px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -26,6 +25,13 @@
       transform: translateY(-50%);
     }
   }
+}
+.footer-block {
+  margin: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 50px;
+
 }
 .exe-lorem {
   max-width: 280px;
@@ -62,6 +68,9 @@ span.footer-header {
     background-color: $red;
     margin-top: 26px;
   }
+}
+.footer-inf-block {
+
 }
 .footer-list {
   width: 270px;
@@ -119,5 +128,28 @@ span.footer-header {
   color: #252525;
   &:hover {
     background-color: $red;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .footer-section {
+    .container {
+      padding-top: 30px;
+    }
+  }
+  .footer-inf-block {
+    padding-top: 55px;
+  }
+  .footer-contact-block {
+    margin-bottom: 95px;
+  }
+}
+@media (max-width: 575px) {
+  .footer-inf-block {
+    padding-top: 0;
+  }
+  .footer-contact-block {
+    margin-bottom: 0;
   }
 }

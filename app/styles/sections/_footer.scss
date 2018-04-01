@@ -55,3 +55,28 @@ footer {
     }
   }
 }
+
+
+@media (max-width: 768px) {
+  footer{
+    .container {
+      justify-content: center;
+    }
+  }
+  .license {
+    p {
+      font-size: 10px;
+    }
+  }
+  .pay {
+    margin-right: auto;
+  }
+}
+@media (max-width: 575px) {
+  .license {
+    order: 2;
+  }
+  .pay {
+    order: 1;
+  }
+}
