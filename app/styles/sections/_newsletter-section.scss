@@ -54,7 +54,7 @@ form.newsletter-form {
     border-left: 1px solid #b7b7b7;
   }
   button {
-    @extend .btn-styles;
+    @extend .btn-form-styles;
     background-color: $headers-color;
   }
 }
